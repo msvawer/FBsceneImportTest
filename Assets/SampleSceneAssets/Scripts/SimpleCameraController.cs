@@ -224,9 +224,10 @@ namespace UnityTemplateProjects
         float GetBoostFactor()
         {
 #if ENABLE_INPUT_SYSTEM
+            // TODO
             return boostFactorAction.ReadValue<Vector2>().y * 0.01f;
 #else
-            return Input.mouseScrollDelta.y * 0.2f;
+            return Input.mouseScrollDelta.y * 0.01f;
 #endif
         }
 
@@ -235,7 +236,7 @@ namespace UnityTemplateProjects
 #if ENABLE_INPUT_SYSTEM
             return lookAction.ReadValue<Vector2>();
 #else
-            return new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * 10;
+            return new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y") * (invertY ? 1 : -1));
 #endif
         }
 
@@ -267,7 +268,7 @@ namespace UnityTemplateProjects
             canRotate |= Gamepad.current != null ? Gamepad.current.rightStick.ReadValue().magnitude > 0 : false;
             return canRotate;
 #else
-            return Input.GetMouseButton(1);
+            return Input.GetMouseButtonDown(1);
 #endif
         }
 
