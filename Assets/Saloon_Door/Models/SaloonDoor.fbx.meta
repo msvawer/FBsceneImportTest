@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 1f89f7b7d0198464ca556d4529fabbb9
+timeCreated: 1557738936
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CLOSE
+    100002: CLOSE1
+    100004: curve2
+    100006: curve2 1
+    100008: curve3
+    100010: curve3 1
+    100012: curve4
+    100014: curve5
+    100016: Left_Door
+    100018: OPEN
+    100020: OPEN1
+    100022: OPEN2
+    100024: OPEN3
+    100026: Open_Close
+    100028: Open_Close1
+    100030: polyToCurve1
+    100032: polyToCurve1 1
+    100034: polyToCurve10
+    100036: polyToCurve11
+    100038: polyToCurve12
+    100040: polyToCurve13
+    100042: polyToCurve14
+    100044: polyToCurve16
+    100046: polyToCurve17
+    100048: polyToCurve18
+    100050: polyToCurve2
+    100052: polyToCurve2 1
+    100054: polyToCurve23
+    100056: polyToCurve24
+    100058: polyToCurve26
+    100060: polyToCurve27
+    100062: polyToCurve28
+    100064: polyToCurve3
+    100066: polyToCurve3 1
+    100068: polyToCurve30
+    100070: polyToCurve31
+    100072: polyToCurve32
+    100074: polyToCurve33
+    100076: polyToCurve34
+    100078: polyToCurve35
+    100080: polyToCurve36
+    100082: polyToCurve37
+    100084: polyToCurve38
+    100086: polyToCurve4
+    100088: polyToCurve4 1
+    100090: polyToCurve5
+    100092: polyToCurve5 1
+    100094: polyToCurve6
+    100096: polyToCurve6 1
+    100098: polyToCurve7
+    100100: polyToCurve8
+    100102: polyToCurve9
+    100104: Right_Door
+    100106: //RootNode
+    100108: SaloonDoor_DoorFrame_LOD0
+    100110: SaloonDoor_DoorFrame_LOD1
+    100112: SaloonDoor_DoorFrame_LOD2
+    100114: SaloonDoor_LeftDoor_LOD0
+    100116: SaloonDoor_LeftDoor_LOD1
+    100118: SaloonDoor_LeftDoor_LOD2
+    100120: SaloonDoor_RightDoor_LOD0
+    100122: SaloonDoor_RightDoor_LOD1
+    100124: SaloonDoor_RightDoor_LOD2
+    100126: UI_Curve
+    400000: CLOSE
+    400002: CLOSE1
+    400004: curve2
+    400006: curve2 1
+    400008: curve3
+    400010: curve3 1
+    400012: curve4
+    400014: curve5
+    400016: Left_Door
+    400018: OPEN
+    400020: OPEN1
+    400022: OPEN2
+    400024: OPEN3
+    400026: Open_Close
+    400028: Open_Close1
+    400030: polyToCurve1
+    400032: polyToCurve1 1
+    400034: polyToCurve10
+    400036: polyToCurve11
+    400038: polyToCurve12
+    400040: polyToCurve13
+    400042: polyToCurve14
+    400044: polyToCurve16
+    400046: polyToCurve17
+    400048: polyToCurve18
+    400050: polyToCurve2
+    400052: polyToCurve2 1
+    400054: polyToCurve23
+    400056: polyToCurve24
+    400058: polyToCurve26
+    400060: polyToCurve27
+    400062: polyToCurve28
+    400064: polyToCurve3
+    400066: polyToCurve3 1
+    400068: polyToCurve30
+    400070: polyToCurve31
+    400072: polyToCurve32
+    400074: polyToCurve33
+    400076: polyToCurve34
+    400078: polyToCurve35
+    400080: polyToCurve36
+    400082: polyToCurve37
+    400084: polyToCurve38
+    400086: polyToCurve4
+    400088: polyToCurve4 1
+    400090: polyToCurve5
+    400092: polyToCurve5 1
+    400094: polyToCurve6
+    400096: polyToCurve6 1
+    400098: polyToCurve7
+    400100: polyToCurve8
+    400102: polyToCurve9
+    400104: Right_Door
+    400106: //RootNode
+    400108: SaloonDoor_DoorFrame_LOD0
+    400110: SaloonDoor_DoorFrame_LOD1
+    400112: SaloonDoor_DoorFrame_LOD2
+    400114: SaloonDoor_LeftDoor_LOD0
+    400116: SaloonDoor_LeftDoor_LOD1
+    400118: SaloonDoor_LeftDoor_LOD2
+    400120: SaloonDoor_RightDoor_LOD0
+    400122: SaloonDoor_RightDoor_LOD1
+    400124: SaloonDoor_RightDoor_LOD2
+    400126: UI_Curve
+    2300000: SaloonDoor_DoorFrame_LOD0
+    2300002: SaloonDoor_DoorFrame_LOD1
+    2300004: SaloonDoor_DoorFrame_LOD2
+    2300006: SaloonDoor_LeftDoor_LOD0
+    2300008: SaloonDoor_LeftDoor_LOD1
+    2300010: SaloonDoor_LeftDoor_LOD2
+    2300012: SaloonDoor_RightDoor_LOD0
+    2300014: SaloonDoor_RightDoor_LOD1
+    2300016: SaloonDoor_RightDoor_LOD2
+    3300000: SaloonDoor_DoorFrame_LOD0
+    3300002: SaloonDoor_DoorFrame_LOD1
+    3300004: SaloonDoor_DoorFrame_LOD2
+    3300006: SaloonDoor_LeftDoor_LOD0
+    3300008: SaloonDoor_LeftDoor_LOD1
+    3300010: SaloonDoor_LeftDoor_LOD2
+    3300012: SaloonDoor_RightDoor_LOD0
+    3300014: SaloonDoor_RightDoor_LOD1
+    3300016: SaloonDoor_RightDoor_LOD2
+    4300000: SaloonDoor_DoorFrame_LOD2
+    4300002: SaloonDoor_LeftDoor_LOD0
+    4300004: SaloonDoor_RightDoor_LOD0
+    4300006: SaloonDoor_RightDoor_LOD1
+    4300008: SaloonDoor_LeftDoor_LOD1
+    4300010: SaloonDoor_DoorFrame_LOD0
+    4300012: SaloonDoor_DoorFrame_LOD1
+    4300014: SaloonDoor_LeftDoor_LOD2
+    4300016: SaloonDoor_RightDoor_LOD2
+    7400000: Take 001
+    9500000: //RootNode
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
