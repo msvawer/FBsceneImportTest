@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Bottle - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.01909995, y: 0.009200215, z: -0.009099916}
+    rotation: {x: -0.5135896, y: 0.0848805, z: 0.847468, w: 0.10401532}
+  index:
+    position: {x: -0.042999983, y: 0.0048002303, z: 0.07930009}
+    rotation: {x: -0.29478753, y: -0.54675615, z: 0.7211206, w: -0.30682775}
+  middle:
+    position: {x: -0.036499977, y: -0.02549988, z: 0.0686001}
+    rotation: {x: -0.20322578, y: -0.6984547, z: 0.62352204, w: -0.28649753}
+  ring:
+    position: {x: -0.037999988, y: -0.044999897, z: 0.07740013}
+    rotation: {x: -0.24193884, y: -0.6599201, z: 0.6344237, w: -0.32167977}
+  pinky:
+    position: {x: 0.8000001, y: 0.4700002, z: 13.7774}
+    rotation: {x: -0.37961158, y: -0.5057522, z: 0.50757885, w: -0.58521235}

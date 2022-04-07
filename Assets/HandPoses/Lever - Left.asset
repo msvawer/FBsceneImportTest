@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Lever - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.007899488, y: 0.024600035, z: -0.0069996677}
+    rotation: {x: -0.5275394, y: 0.07320788, z: 0.83926463, w: 0.10944722}
+  index:
+    position: {x: 0.065999955, y: -0.007900093, z: 0.062500045}
+    rotation: {x: 0.19938003, y: -0.7171553, z: 0.6420787, w: 0.18349901}
+  middle:
+    position: {x: 0.06899987, y: -0.016000278, z: 0.052400015}
+    rotation: {x: 0.22574581, y: -0.7472223, z: 0.606723, w: 0.15028569}
+  ring:
+    position: {x: 0.48900083, y: 0.079000086, z: 0.12540051}
+    rotation: {x: 0.22521307, y: -0.7944081, z: 0.560258, w: 0.065626055}
+  pinky:
+    position: {x: 0.44900078, y: 0.13300017, z: 0.01540041}
+    rotation: {x: 0.48716766, y: -0.7033647, z: 0.5097199, w: 0.09017974}

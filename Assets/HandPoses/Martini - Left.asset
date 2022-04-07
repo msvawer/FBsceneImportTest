@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Martini - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.036700062, y: 0.004200265, z: -0.01719987}
+    rotation: {x: -0.5275393, y: 0.073207855, z: 0.83926415, w: 0.10944727}
+  index:
+    position: {x: -0.009099908, y: -0.013999745, z: 0.10810006}
+    rotation: {x: -0.18454301, y: -0.7243989, z: 0.66083753, w: -0.06696236}
+  middle:
+    position: {x: 0.006800107, y: -0.026799873, z: 0.070500016}
+    rotation: {x: -0.057318807, y: -0.7589311, z: 0.6473631, w: -0.040734053}
+  ring:
+    position: {x: -0.013499923, y: -0.052199826, z: 0.034300093}
+    rotation: {x: -0.021128803, y: -0.79941726, z: 0.58701205, w: -0.1261056}
+  pinky:
+    position: {x: 0.052300148, y: -0.09549983, z: 0.14690006}
+    rotation: {x: -0.1070492, y: -0.8401934, z: 0.48206937, w: -0.22410892}
