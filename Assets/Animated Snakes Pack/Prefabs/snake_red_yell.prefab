@@ -592,9 +592,11 @@ GameObject:
   - component: {fileID: 4514479838113656}
   - component: {fileID: 95889697295581138}
   - component: {fileID: 65253098273832100}
+  - component: {fileID: 1521633064577120708}
+  - component: {fileID: 145350931}
   m_Layer: 0
   m_Name: snake_red_yell
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -645,5 +647,30 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.20303506, y: 0.15663683, z: 4.1329107}
-  m_Center: {x: 0.0015151203, y: 0.0874061, z: -0.88988495}
+  m_Size: {x: 0.7054024, y: 0.43618774, z: 4.529972}
+  m_Center: {x: -0.14250565, y: 0.06325531, z: -1.0284252}
+--- !u!114 &1521633064577120708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826576137231126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da6249d809f000469f1e0c760d63a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &145350931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826576137231126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e46e2c211d3d047930d7b0e563c8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 9
