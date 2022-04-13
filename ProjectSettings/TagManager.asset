@@ -7,6 +7,14 @@ TagManager:
   - Enemy
   - XRRig
   - XRRigOrigin
+  - Projectile
+  - JB4
+  - JB2
+  - JB1
+  - JB3
+  - Mushroom
+  - RadioAudio
+  - BeepBoop!Audio
   layers:
   - Default
   - TransparentFX
