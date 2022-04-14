@@ -13,10 +13,20 @@ public class Shooter : MonoBehaviour
 
     private Rigidbody rigidBody = null;
 
+    [SerializeField]
+    private AudioSource shooterNoiseSource;
+
+    [SerializeField]
+    private AudioClip shooterNoiseClip;
+
+    [SerializeField]
+    private float volume = 0.5f;
+
     private void Awake()
     {
         interactable = GetComponent<XRGrabInteractable>();
         rigidBody = GetComponent<Rigidbody>();
+        shooterNoiseSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -35,6 +45,12 @@ public class Shooter : MonoBehaviour
         CreateProjectile();
         print("Fire");
         ApplyRecoil();
+        ShootNoise();
+    }
+
+    private void ShootNoise()
+    {
+        shooterNoiseSource.PlayOneShot(shooterNoiseClip, volume);
     }
 
     private void CreateProjectile()
