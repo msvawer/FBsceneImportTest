@@ -6,7 +6,7 @@ using UnityEngine;
 public class BeepBoopAudio : MonoBehaviour
 {
     public AudioClip beepBoopWelcome;
-    AudioSource beepBoopAudioSource;
+    public AudioSource beepBoopAudioSource;
 
 
     // Start is called before the first frame update
@@ -20,9 +20,9 @@ public class BeepBoopAudio : MonoBehaviour
     
         void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player"))
+            if (other.tag == "Player" && !beepBoopAudioSource.isPlaying)
             {
-                beepBoopAudioSource.PlayOneShot(beepBoopWelcome, 0.7F);
+                beepBoopAudioSource.Play();
             }
         }
         
