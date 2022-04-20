@@ -9,6 +9,8 @@ public class Score : MonoBehaviour
     private int displayScore;
     public TextMeshPro scoreUI;
 
+    public AudioSource missionCompleteAudio;
+    
 
     void Start()
     {
@@ -25,15 +27,18 @@ public class Score : MonoBehaviour
         }
     }
 
-    //  private void Awake()
-    //{
-    //     enemyCountdown = 30;
-    //    textMeshPro = GetComponent<TextMeshPro>();
-    // }
+    void ScoreAtZero()
+    {
+        if(enemyCountdown <= 0)
+        {
+            MissionComplete();
+        }
+    }
 
-    //public void ShowScore(int enemyCountdown)
-    // {
-    //     textMeshPro.text = enemyCountdown.ToString();
-    // }
+    void MissionComplete()
+    {
+        missionCompleteAudio.Play();
+    }
+    
 
 }

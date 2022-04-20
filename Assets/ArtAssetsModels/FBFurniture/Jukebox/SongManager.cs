@@ -19,6 +19,8 @@ public class SongManager : MonoBehaviour
 
     public float volume = 1f;
 
+    public float lowVolume = 0.2f;
+
     void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();
@@ -53,4 +55,29 @@ public class SongManager : MonoBehaviour
             m_MyAudioSource.Play();
         }
     }
+
+    //void OnEnable()
+    //{
+      //  RadioAnnouncement.OnRadioOn += LowerVolume;
+     //   RadioAnnouncement.OnBeepBoopEnd += ReturnVolume;
+    //}
+
+   // void OnDisable()
+   // {
+     //   RadioAnnouncement.OnRadioOn -= LowerVolume;
+    //    RadioAnnouncement.OnBeepBoopEnd -= ReturnVolume;
+    //}
+
+
+    //void LowerVolume()
+    //{
+    //    m_MyAudioSource = GetComponent<AudioSource>();
+     //   m_MyAudioSource.volume = lowVolume;
+   // }
+
+   // void ReturnVolume()
+  //  {
+     //   m_MyAudioSource = GetComponent<AudioSource>();
+     //   m_MyAudioSource.volume = volume;
+    //}
 }

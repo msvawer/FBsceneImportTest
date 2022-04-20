@@ -9,6 +9,7 @@ public class RadioAnnouncement : MonoBehaviour
     public AudioClip radioClip;
     public AudioClip beepBoopClip;
 
+    
     void Start()
     {
         StartCoroutine(playSound());
@@ -16,12 +17,15 @@ public class RadioAnnouncement : MonoBehaviour
 
     IEnumerator playSound()
     {
-        yield return new WaitForSeconds(150);
+        yield return new WaitForSeconds(100);
         GetComponent<AudioSource>().clip = radioClip;
         GetComponent<AudioSource>().Play();
+        
         yield return new WaitForSeconds(radioClip.length);
         GetComponent<AudioSource>().clip = beepBoopClip;
         GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(beepBoopClip.length);
+
         
     }
 }
