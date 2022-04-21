@@ -23,12 +23,8 @@ public class Enemy : MonoBehaviour
 
     private void UpdateEnemyCountdown()
     {
-
-       // int enemyCountdown = 30;
-
-        // enemyCountdown--;
         Score.enemyCountdown--;
-       // OnHit.Invoke(enemyCountdown);
+       
     }
 
     public IEnumerator EnemyShot()

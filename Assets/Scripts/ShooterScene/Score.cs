@@ -16,29 +16,34 @@ public class Score : MonoBehaviour
     {
         enemyCountdown = 30;
         displayScore = 30;
+        missionCompleteAudio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if(enemyCountdown != displayScore)
+        
+        if (enemyCountdown != displayScore)
         {
             displayScore = enemyCountdown;
             scoreUI.text = displayScore.ToString();
+            // ScoreAtZero();
+
+            if (Score.enemyCountdown <= 30)
+            {
+                MissionCompleted();
+            }
         }
     }
 
-    void ScoreAtZero()
+    public void MissionCompleted()
     {
-        if(enemyCountdown <= 0)
-        {
-            MissionComplete();
-        }
-    }
 
-    void MissionComplete()
-    {
         missionCompleteAudio.Play();
     }
-    
+
+
+
+
+
 
 }
