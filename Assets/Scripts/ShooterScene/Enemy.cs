@@ -16,20 +16,16 @@ public class Enemy : MonoBehaviour
         {
            UpdateEnemyCountdown();
            StartCoroutine(EnemyShot());
-        }
-           
-            
+        }       
     }
 
     private void UpdateEnemyCountdown()
     {
         Score.enemyCountdown--;
-       
     }
 
     public IEnumerator EnemyShot()
     {
-        
         ObjectPooler.Instance.DeactiveEnemy(gameObject);
         yield return null;
     }

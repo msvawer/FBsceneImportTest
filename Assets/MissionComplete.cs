@@ -10,6 +10,7 @@ public class MissionComplete : MonoBehaviour
     void Start()
     {
         missionCompleteAudio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -17,6 +18,7 @@ public class MissionComplete : MonoBehaviour
     {
         if (Score.enemyCountdown == 0)
         {
+            Debug.Log("==0 is true");
             MissionCompleted();
         }
     }
