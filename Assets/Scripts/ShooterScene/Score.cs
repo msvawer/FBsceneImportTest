@@ -28,7 +28,7 @@ public class Score : MonoBehaviour
             scoreUI.text = displayScore.ToString();
             // ScoreAtZero();
 
-            if (Score.enemyCountdown <= 30)
+            if (Score.enemyCountdown == 0)
             {
                 MissionCompleted();
             }

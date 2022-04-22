@@ -15,7 +15,7 @@ public class MissionComplete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Score.enemyCountdown <= 30)
+        if (Score.enemyCountdown == 0)
         {
             MissionCompleted();
         }
