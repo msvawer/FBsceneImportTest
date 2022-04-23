@@ -39,10 +39,16 @@ public class Spawner : MonoBehaviour
 
     private void SpawnObject()
     {
+        int spawnPointX = Random.Range(19, 26);
+        int spawnPointY = Random.Range(10, 14);
+        int spawnPointZ = Random.Range(-35, -42);
+
+        Vector3 spawnPosition = new Vector3(spawnPointX, spawnPointY, spawnPointZ);
+
        if (_spawnEnemies == true)
         {
             
-           objectPooler.SpawnFromPool("Enemy", transform.position, Quaternion.identity);
+           objectPooler.SpawnFromPool("Enemy", spawnPosition, Quaternion.identity);
            
         }
     }
