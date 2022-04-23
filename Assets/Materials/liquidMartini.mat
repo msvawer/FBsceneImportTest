@@ -34,6 +34,8 @@ Material:
     m_Floats:
     - Vector1_038d3f24809c404d8369eb36269b7c29: 0.02
     - Vector1_c252b0ac7687437ca753ee159f994c01: 0.13
+    - _WobbleX: -0.06
+    - _WobbleZ: -0.04
     m_Colors:
     - Color_41e4366d7f1042b3b46a4560e87fdb1f: {r: 0.9333334, g: 0.4666667, b: 0.24313727, a: 0}
     - Color_83c3dcd8b0ed4ef2892aa8ad14389d3f: {r: 0.79215693, g: 0.3372549, b: 0.1764706, a: 0.3686275}
