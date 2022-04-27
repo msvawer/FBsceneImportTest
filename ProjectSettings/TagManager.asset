@@ -15,6 +15,7 @@ TagManager:
   - Mushroom
   - RadioAudio
   - BeepBoop!Audio
+  - EnteredBar
   layers:
   - Default
   - TransparentFX

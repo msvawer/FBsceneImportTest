@@ -17,6 +17,11 @@ public class SongManager : MonoBehaviour
     public AudioClip song3;
     public AudioClip song4;
 
+    public AudioClip howToEnterBar;
+    public AudioClip beepBoopWelcome;
+    public AudioClip radioAnnouncement; 
+
+
     public float volume = 1f;
 
     public float lowVolume = 0.2f;
@@ -24,9 +29,20 @@ public class SongManager : MonoBehaviour
     void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();
+        m_MyAudioSource.PlayOneShot(song1, lowVolume);
     }
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "EnteredBar")
+        {
+           // m_MyAudioSource.Stop();
+            m_MyAudioSource.PlayOneShot(beepBoopWelcome, volume);
+            Debug.Log("Entered Bar");
+            //m_MyAudioSource.Play();
+        }
+
+
+
         if(other.gameObject.tag == "JB1")
         {
             m_MyAudioSource.Stop(); //Stop current song                         

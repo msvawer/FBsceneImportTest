@@ -10,13 +10,13 @@ public class Score : MonoBehaviour
     public TextMeshPro scoreUI;
 
     public AudioSource missionCompleteAudio;
-    
 
     void Start()
     {
         enemyCountdown = 30;
         displayScore = 30;
         missionCompleteAudio = GetComponent<AudioSource>();
+       
     }
 
     void Update()
@@ -37,8 +37,8 @@ public class Score : MonoBehaviour
 
     public void MissionCompleted()
     {
-
         missionCompleteAudio.Play();
+        
     }
 
 

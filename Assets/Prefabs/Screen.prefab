@@ -283,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 8940319245847892873}
   missionCompleteAudio: {fileID: 0}
+  m_enemySpawner: {fileID: 0}
 --- !u!114 &39234123779993269
 MonoBehaviour:
   m_ObjectHideFlags: 0

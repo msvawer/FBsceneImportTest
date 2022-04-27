@@ -18,8 +18,6 @@ public class Spawner : MonoBehaviour
         objectPooler = ObjectPooler.Instance;
 
         InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
-        
-        
     }
 
     private void OnEnable()
@@ -37,34 +35,22 @@ public class Spawner : MonoBehaviour
         _spawnEnemies = true;
     }
 
+    public void SetFalse()
+    {
+        _spawnEnemies = false;
+
+    }
+
     private void SpawnObject()
     {
         int spawnPointX = Random.Range(19, 26);
         int spawnPointY = Random.Range(10, 14);
         int spawnPointZ = Random.Range(-35, -42);
-
         Vector3 spawnPosition = new Vector3(spawnPointX, spawnPointY, spawnPointZ);
 
        if (_spawnEnemies == true)
         {
-            
            objectPooler.SpawnFromPool("Enemy", spawnPosition, Quaternion.identity);
-           
         }
     }
-
-   
-
-
-    
-    //IEnumerator SpawnEnemies()
-    //{
-     //   while (_spawnEnemies == true)
-     //  {
-         
-     //       ObjectPooler.Instance.SpawnFromPool("Enemy", transform.position, Quaternion.identity);
-     //       yield return new WaitForSeconds(3f);
-     //   }
-        
-    //}
 }
