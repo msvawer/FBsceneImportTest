@@ -16,7 +16,6 @@ public class Score : MonoBehaviour
         enemyCountdown = 30;
         displayScore = 30;
         missionCompleteAudio = GetComponent<AudioSource>();
-       
     }
 
     void Update()
@@ -26,7 +25,6 @@ public class Score : MonoBehaviour
         {
             displayScore = enemyCountdown;
             scoreUI.text = displayScore.ToString();
-            // ScoreAtZero();
 
             if (Score.enemyCountdown == 0)
             {
@@ -38,12 +36,5 @@ public class Score : MonoBehaviour
     public void MissionCompleted()
     {
         missionCompleteAudio.Play();
-        
     }
-
-
-
-
-
-
 }

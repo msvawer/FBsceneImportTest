@@ -17,26 +17,14 @@ public class SongManager : MonoBehaviour
     public AudioClip song3;
     public AudioClip song4;
 
-    
-    public AudioClip beepBoopWelcome;
-    public AudioClip radioAnnouncement; 
-
-
     public float volume = 1f;
-
     public float lowVolume = 0.1f;
-
-    private bool dialoguePlaying = false;
-
     public bool enteredBar = false;
-
-  
 
     void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();
         m_MyAudioSource.PlayOneShot(song1, lowVolume);
-        
     }
 
     
@@ -45,7 +33,7 @@ public class SongManager : MonoBehaviour
         if(other.gameObject.tag == "EnteredBar")
         {
             enteredBar = true;
-            m_MyAudioSource.PlayOneShot(beepBoopWelcome, volume);
+            //m_MyAudioSource.PlayOneShot(beepBoopWelcome, volume);
             Debug.Log("Entered Bar");
             //m_MyAudioSource.Play();
         }
@@ -54,9 +42,9 @@ public class SongManager : MonoBehaviour
 
         if(other.gameObject.tag == "JB1")
         {
-            //m_MyAudioSource.Stop(); //Stop current song                         
+            m_MyAudioSource.Stop(); //Stop current song                         
             m_MyAudioSource.PlayOneShot(song1, lowVolume); //Set new clip
-           // m_MyAudioSource.Play(); //play new clip
+            m_MyAudioSource.Play(); //play new clip
         }
 
         if(other.gameObject.tag == "JB2")

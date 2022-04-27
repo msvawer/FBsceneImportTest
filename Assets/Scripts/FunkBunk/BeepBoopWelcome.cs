@@ -15,12 +15,13 @@ public class BeepBoopWelcome : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "EnteredBar")
+        if (other.gameObject.tag == "MainCamera")
         {
             //enteredBar = true;
+            Debug.Log("Main Camera collider trigger entered triggerZone");
             beepBoopAudioSrc.PlayOneShot(beepBoopWelcome, volume);
             Debug.Log("Entered Bar");
-            //m_MyAudioSource.Play();
+            
         }
     }
 
