@@ -20,8 +20,7 @@ public class BeepBoopWelcome : MonoBehaviour
             //enteredBar = true;
             Debug.Log("Main Camera collider trigger entered triggerZone");
             beepBoopAudioSrc.PlayOneShot(beepBoopWelcome, volume);
-            Debug.Log("Entered Bar");
-            
+           
         }
     }
 

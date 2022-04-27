@@ -6019,12 +6019,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MyAudioSource: {fileID: 305257050}
-  song1: {fileID: 8300000, guid: 6afc8c16586a09044aa64d10745a9b9f, type: 3}
-  song2: {fileID: 8300000, guid: d8fd898cc467910459ab0773a3607c36, type: 3}
-  song3: {fileID: 8300000, guid: ba51faa8f3987c740ac7e3d8526a1bda, type: 3}
-  song4: {fileID: 8300000, guid: c691e11bb26096f4eb5bfbbf58be8c1f, type: 3}
-  beepBoopWelcome: {fileID: 8300000, guid: 32265c69a24c85141b80983e4581c450, type: 3}
-  radioAnnouncement: {fileID: 8300000, guid: df35fc9d345c3904e8be54d3f2bb1294, type: 3}
+  songArray:
+  - {fileID: 8300000, guid: 6afc8c16586a09044aa64d10745a9b9f, type: 3}
+  - {fileID: 8300000, guid: d8fd898cc467910459ab0773a3607c36, type: 3}
+  - {fileID: 8300000, guid: ba51faa8f3987c740ac7e3d8526a1bda, type: 3}
+  - {fileID: 8300000, guid: c691e11bb26096f4eb5bfbbf58be8c1f, type: 3}
   volume: 0.58
   lowVolume: 0.2
   enteredBar: 0
@@ -8151,6 +8150,7 @@ GameObject:
   - component: {fileID: 1009065837}
   - component: {fileID: 1009065841}
   - component: {fileID: 1009065840}
+  - component: {fileID: 1009065842}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8344,6 +8344,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!135 &1009065842
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009065835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1014012020
 GameObject:
   m_ObjectHideFlags: 0
