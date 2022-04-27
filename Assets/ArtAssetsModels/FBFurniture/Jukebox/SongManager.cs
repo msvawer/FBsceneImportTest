@@ -17,25 +17,34 @@ public class SongManager : MonoBehaviour
     public AudioClip song3;
     public AudioClip song4;
 
-    public AudioClip howToEnterBar;
+    
     public AudioClip beepBoopWelcome;
     public AudioClip radioAnnouncement; 
 
 
     public float volume = 1f;
 
-    public float lowVolume = 0.2f;
+    public float lowVolume = 0.1f;
+
+    private bool dialoguePlaying = false;
+
+    public bool enteredBar = false;
+
+  
 
     void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();
         m_MyAudioSource.PlayOneShot(song1, lowVolume);
+        
     }
+
+    
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "EnteredBar")
         {
-           // m_MyAudioSource.Stop();
+            enteredBar = true;
             m_MyAudioSource.PlayOneShot(beepBoopWelcome, volume);
             Debug.Log("Entered Bar");
             //m_MyAudioSource.Play();
@@ -45,31 +54,32 @@ public class SongManager : MonoBehaviour
 
         if(other.gameObject.tag == "JB1")
         {
-            m_MyAudioSource.Stop(); //Stop current song                         
-            m_MyAudioSource.PlayOneShot(song1, volume); //Set new clip
-            m_MyAudioSource.Play(); //play new clip
+            //m_MyAudioSource.Stop(); //Stop current song                         
+            m_MyAudioSource.PlayOneShot(song1, lowVolume); //Set new clip
+           // m_MyAudioSource.Play(); //play new clip
         }
 
         if(other.gameObject.tag == "JB2")
         {
             m_MyAudioSource.Stop(); 
-            m_MyAudioSource.PlayOneShot(song2, volume);
+            m_MyAudioSource.PlayOneShot(song2, lowVolume);
             m_MyAudioSource.Play();
         }
 
         if (other.gameObject.tag == "JB3")
         {
             m_MyAudioSource.Stop(); 
-            m_MyAudioSource.PlayOneShot(song3, volume);
+            m_MyAudioSource.PlayOneShot(song3, lowVolume);
             m_MyAudioSource.Play();
         }
 
         if (other.gameObject.tag == "JB4")
         {
             m_MyAudioSource.Stop();           
-            m_MyAudioSource.PlayOneShot(song4, volume);
+            m_MyAudioSource.PlayOneShot(song4, lowVolume);
             m_MyAudioSource.Play();
         }
+
     }
 
     //void OnEnable()
