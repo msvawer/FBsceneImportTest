@@ -11,6 +11,8 @@ public class Score : MonoBehaviour
 
     public AudioSource missionCompleteAudio;
 
+    public bool missionComplete;
+
     void Start()
     {
         enemyCountdown = 30;
@@ -28,6 +30,7 @@ public class Score : MonoBehaviour
 
             if (Score.enemyCountdown == 0)
             {
+                
                 MissionCompleted();
             }
         }
@@ -36,5 +39,6 @@ public class Score : MonoBehaviour
     public void MissionCompleted()
     {
         missionCompleteAudio.Play();
+        missionComplete = true;
     }
 }
