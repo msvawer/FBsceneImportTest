@@ -7,10 +7,17 @@ public class Enemy : MonoBehaviour
 {
 
     public ParticleSystem explosion;
+    public AudioSource explosionSound;
+    public AudioClip explosionSoundClip;
+    [SerializeField]
+    float explosionVolume = .2f;
 
     public void Start()
     {
         explosion = GetComponentInChildren<ParticleSystem>();
+        explosionSound = GetComponent<AudioSource>();
+        explosionSound.clip = explosionSoundClip;
+
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -30,8 +37,9 @@ public class Enemy : MonoBehaviour
 
     public IEnumerator EnemyShot()
     {
+        explosionSound.PlayOneShot(explosionSoundClip, .2f);
         explosion.Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
         ObjectPooler.Instance.DeactiveEnemy(gameObject);
         yield return null;
     }
