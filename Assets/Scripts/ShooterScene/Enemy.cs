@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     public IEnumerator EnemyShot()
     {
         explosion.Play();
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         ObjectPooler.Instance.DeactiveEnemy(gameObject);
         yield return null;
     }

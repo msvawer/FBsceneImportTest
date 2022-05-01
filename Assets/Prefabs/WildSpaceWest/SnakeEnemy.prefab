@@ -55,6 +55,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076863, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076863, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076863, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3.49
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
 --- !u!1001 &2810474387747992977
@@ -70,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1826576137231126, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_Name
-      value: snake_red_yell
+      value: SnakeEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_RootOrder
@@ -78,15 +90,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.6
+      value: 22.15
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.51
+      value: 11.6451845
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.23
+      value: -21.620224
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalRotation.w
