@@ -5,16 +5,20 @@ using UnityEngine;
 using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
-    // [Serializable] public class HitEvent : UnityEvent<int> { }
 
-    //public HitEvent OnHit = new HitEvent();
+    public ParticleSystem explosion;
 
-    private void OnCollisionEnter(Collision collision)
+    public void Start()
+    {
+        explosion = GetComponentInChildren<ParticleSystem>();
+    }
+
+    public void OnCollisionEnter(Collision collision)
     {
         
         if (collision.gameObject.CompareTag("Projectile"))
         {
-           UpdateEnemyCountdown();
+            UpdateEnemyCountdown();
            StartCoroutine(EnemyShot());
         }       
     }
@@ -26,7 +30,10 @@ public class Enemy : MonoBehaviour
 
     public IEnumerator EnemyShot()
     {
+        explosion.Play();
+        yield return new WaitForSeconds(3);
         ObjectPooler.Instance.DeactiveEnemy(gameObject);
         yield return null;
     }
 }
+

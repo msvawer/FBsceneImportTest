@@ -17,7 +17,7 @@ public class RadioAnnouncement : MonoBehaviour
 
     IEnumerator playSound()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(120);
         GetComponent<AudioSource>().clip = radioClip;
         GetComponent<AudioSource>().Play();
         

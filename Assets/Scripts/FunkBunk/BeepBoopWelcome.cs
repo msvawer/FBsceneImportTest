@@ -7,6 +7,7 @@ public class BeepBoopWelcome : MonoBehaviour
     public AudioSource beepBoopAudioSrc;
     public AudioClip beepBoopWelcome;
     public float volume = 1;
+    public bool alreadyPlayed;
 
     private void Start()
     {
@@ -17,9 +18,15 @@ public class BeepBoopWelcome : MonoBehaviour
     {
         if (other.gameObject.tag == "MainCamera")
         {
-            //enteredBar = true;
-            Debug.Log("Main Camera collider trigger entered triggerZone");
-            beepBoopAudioSrc.PlayOneShot(beepBoopWelcome, volume);
+            if(!alreadyPlayed)
+            {
+                //enteredBar = true;
+                Debug.Log("Main Camera collider trigger entered triggerZone");
+                // beepBoopAudioSrc.PlayOneShot(beepBoopWelcome, volume);
+                beepBoopAudioSrc.Play();
+                alreadyPlayed = true;
+            }
+            
            
         }
     }

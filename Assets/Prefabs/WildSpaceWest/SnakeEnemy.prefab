@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &191406791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2814967975387716329}
+    m_Modifications:
+    - target: {fileID: 1585863044079076861, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_Name
+      value: explosionParticle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585863044079076862, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e77c7fbb9c98ce45bbb86d1bdc228e1, type: 3}
 --- !u!1001 &2810474387747992977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1826576137231126, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_Name
-      value: SnakeEnemy
+      value: snake_red_yell
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_RootOrder
@@ -21,15 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.55
+      value: 46.6
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.6451845
+      value: 12.51
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.620224
+      value: -35.23
       objectReference: {fileID: 0}
     - target: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73,3 +130,8 @@ PrefabInstance:
       objectReference: {fileID: 6903373719814245264, guid: eb2962494d22ac443904a736d5b5b052, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 792f933a6444af0499c42144afc2462d, type: 3}
+--- !u!4 &2814967975387716329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4514479838113656, guid: 792f933a6444af0499c42144afc2462d, type: 3}
+  m_PrefabInstance: {fileID: 2810474387747992977}
+  m_PrefabAsset: {fileID: 0}
